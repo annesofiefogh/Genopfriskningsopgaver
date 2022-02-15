@@ -21,7 +21,6 @@ public class ProperCase {
 
     public static void main(String[] args) {
         ProperCase pc = new ProperCase();
-        System.out.println(Arrays.toString(pc.properCase("HVALER kAn være sødE")));
+        System.out.println(Arrays.toString(pc.properCase("WhAlES cAn be niCE")));
     }
-
 }

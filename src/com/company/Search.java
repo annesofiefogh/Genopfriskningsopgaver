@@ -2,11 +2,11 @@ package com.company;
 
 import java.io.IOException;
 
-public class Søgning {
+public class Search {
 
-    public int search (String[] array, String s) throws IOException {
+    public int search(String[] array, String input) throws IOException {
         for (int i = 0; i < array.length; i++) {
-            if (array[i].equals(s)){
+            if (array[i].equals(input)){
              return i;
             }
         }
@@ -15,12 +15,10 @@ public class Søgning {
 
 
     public static void main(String[] args) throws IOException {
-        Søgning søgning = new Søgning();
+        Search search = new Search();
 
-        String[] words = {"bold", "sol", "kage"};
+        String[] words = {"Ball", "Sun", "Cake"};
 
-        System.out.println(søgning.search(words, "hund"));
+        System.out.println(search.search(words, "Dog"));
     }
-
-
 }

@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Græs {
+public class Grass {
 
     public int whenToMoweTheLawn(double grassLength, double maxLength){
         boolean dontCut = true;
@@ -19,14 +19,14 @@ public class Græs {
 
 
     public static void main(String[] args) {
-        Græs græs = new Græs();
+        Grass grass = new Grass();
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Current height of grass: ");
         double currentHeight = sc.nextDouble();
         System.out.println("When do you think it is too high?: ");
         double maxHeight = sc.nextDouble();
 
-        System.out.println(græs.whenToMoweTheLawn(currentHeight, maxHeight));
+        System.out.println(grass.whenToMoweTheLawn(currentHeight, maxHeight));
     }
-
 }
